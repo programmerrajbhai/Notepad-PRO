@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".Edit_Text">
+
+
+    <LinearLayout
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#3BF6F3F3"
+        android:orientation="horizontal"
+        >
+
+        <ImageView
+            android:id="@+id/backk"
+            android:clickable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="10dp"
+            android:src="@drawable/baseline_arrow_back_24" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="Raj Add Note"
+            android:textColor="@color/white"
+            android:textSize="22sp"
+            android:layout_marginStart="15dp"
+            android:gravity="center|start"
+            />
+
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Save"
+            android:id="@+id/addValue"
+            android:gravity="end|center"
+            android:layout_marginEnd="20dp"
+            android:textSize="22sp"
+            android:textColor="@color/white"
+            android:clickable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+
+            />
+
+
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/tit"
+        android:layout_below="@+id/top"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:cardCornerRadius="20dp"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:background="@color/white"
+            >
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:id="@+id/edText"
+                android:textColor="@color/black"
+                android:hint="Enter Title..."
+                android:layout_marginStart="10sp"
+                android:lines="1"
+                />
+
+
+
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_marginTop="10sp"
+        android:layout_below="@+id/tit"
+        android:layout_marginStart="10sp"
+        android:layout_marginEnd="10sp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cardCornerRadius="15dp"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#83FFFFFF"
+            >
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:id="@+id/des"
+                android:hint="Enter Note..."
+                android:layout_marginTop="15dp"
+                android:textColor="@color/black"
+                android:gravity="start|top"
+                android:layout_marginStart="10sp"
+                />
+
+
+
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

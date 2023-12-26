@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".MainActivity">
+
+    
+    <LinearLayout
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#3BF6F3F3"
+        android:orientation="horizontal"
+        >
+        <ImageView
+            android:clickable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="10dp"
+            android:src="@drawable/baseline_menu_24"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="RAJ NOTEPAD"
+            android:textColor="@color/white"
+            android:textSize="22sp"
+            android:layout_marginStart="15dp"
+            android:gravity="center"
+            />
+        <EditText
+            android:layout_marginStart="20dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:hint="Search Here"
+            android:lines="1"
+            android:textSize="18dp"
+            android:textColorHint="#54FFFFFF"
+            android:textColor="@color/white"
+            />
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="10sp"
+            android:src="@drawable/baseline_search_24"
+            />
+
+    </LinearLayout>
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/addID"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/baseline_add_24"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="40dp"
+        />
+
+
+    <ListView
+        android:layout_below="@id/top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/listView"
+        android:divider="@color/black"
+        >
+
+    </ListView>
+
+</RelativeLayout>
